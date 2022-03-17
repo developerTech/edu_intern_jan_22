@@ -1,0 +1,149 @@
+https://code.visualstudio.com/ >> install
+https://github.com/ >> create account
+https://github.com/Aakashdeveloper > Follow
+https://git-scm.com/downloads > install
+https://stackoverflow.com/ >> create account
+https://www.linkedin.com/ >> create account
+https://quora.com/ >> create account
+https://nodejs.org/en/ >> install
+
+HTML >>> Static (Structure)
+CSS >>> Design 
+BootStrap
+JavaScript
+NodeJs
+MongoDb
+Express
+React
+
+/*****/
+Heroku
+Gitpages
+Netlify
+
+/*******/
+Redis
+Postgress
+
+////////
+Zomato  > Firstapp
+? > Second App
+
+
+3 project 
+> zomato  > Firstapp
+> ?  > Second App
+> profile
+many subtask
+
+
+html> main (hyper text markup language)
+head (contains all the link (css,javascript))
+body (contains all the content visible to user)
+
+////////
+block level
+> those which start from the new line
+> p div h1
+
+inline
+> that start in the same line
+> span a img
+
+https://imgbb.com/
+https://maps.google.com/
+
+////////
+design
+
+> inline
+> styletag
+> stylesheet
+
+inline>styletag>stylesheet
+
+div
+stylesheet{
+    text-align:right;
+    font-size:40px 
+    border:2px solid red;
+    background-color:orange
+}
+
+inline{
+   color:red;
+   font-size:30px;
+}
+
+styletag{
+    color:orange;
+    text-align:center;
+    font-weight:bold
+}
+
+
+
+{
+   color:red;
+   font-size:30px;
+   text-align:center;
+   font-weight:bold
+   border:2px solid red;
+   background-color:orange
+}
+
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+////////
+tagname> h1, p, a
+id(#) > to target unique element
+class(.) > to target multiple element
+
+////////
+border:10px double green;
+solid
+dotted
+double
+groove
+dashed
+
+//////////
+Grid basic
+////////
+bootstrap3
+
+xs < 768px
+sm > 768px
+md > 992px
+lg > 1200px
+
+bootstrap4
+col- >576px
+sm < 576px
+md < 768px
+lg < 992px
+xl < 1200px
+
+
+bootstrap5
+col- >576px
+sm < 576px
+md < 768px
+lg < 992px
+xl < 1200px
+xxl < 1400px
+
+objectfunction
+objectthis
+clouser
+class
+exportimport
+prototypees5
+prototypees6
+hoisting
+forms validation
+weather with jquery
+
+
+
+https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.989184&lon=77.0342729&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29

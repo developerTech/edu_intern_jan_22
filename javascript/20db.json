@@ -1,0 +1,14 @@
+// javascript object notation
+
+var movies = [
+    {
+        "name":"Avengers",
+        "rating":4.5,
+        "type":"Action"
+    },
+    {
+        "name":"Avengers",
+        "rating":4.5,
+        "type":"Action"
+    }
+]

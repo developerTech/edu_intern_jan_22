@@ -1,0 +1,57 @@
+body{
+    margin: auto;
+}
+a{
+    text-decoration: none
+}
+/* Header Start */
+header{
+    height:60px;
+    background-color:#e09c83
+}
+
+#icon{
+    float:left
+}
+
+#social{
+    float:right
+}
+
+.slogo{
+    height: 50px;
+    width: 50px;
+}
+#heading{
+    text-align: center;
+}
+.mainContent{
+    height:700px;
+    width:75%;
+    margin-left:13%
+}
+#filter{
+    height:500px;
+    width:22%;
+    border:2px solid red;
+    float: left;
+}
+#card{
+    height:700px;
+    width:75%;
+    border:2px solid orange;
+    margin-left:2%;
+    float: left;
+}
+/* footer Start */
+footer{
+    height:200px;
+    background-color:#e09c83
+}
+
+.foot1{
+    width:35%;
+    height:120px;
+    float: left;
+    border-right:2px solid white
+}

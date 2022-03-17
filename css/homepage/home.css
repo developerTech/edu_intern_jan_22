@@ -1,0 +1,277 @@
+body{
+    margin: auto;
+}
+/* Header Start */
+header{
+    height:60px;
+    background-color:#e09c83
+}
+
+#icon{
+    float:left
+}
+
+#social{
+    float:right
+}
+
+.slogo{
+    height: 50px;
+    width: 50px;
+}
+
+/* Search Start */
+#search{
+    height:400px;
+    background-image: url('image/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 400px;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: rgba(255, 255, 255,1);
+    border-radius: 50%;
+    margin-left:45%;
+    margin-top:1%;
+    position: absolute;
+    font-size:80px;
+    color:#e09c83;
+    animation:revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0% {transform: rotate(30deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/*
+#logo:hover{
+    background-color: rgba(255, 255, 255,.5);
+    color:#d85323;
+    transform: rotate(270deg);
+}
+*/
+
+#logo > span{
+    margin-left: 30%;
+    margin-top:15%;
+    position: absolute;
+}
+
+#heading{
+    margin-left:29%;
+    margin-top:14%;
+    position: absolute;
+    color:white;
+    font-size:45px;
+}
+
+.dropdown{
+    height:60px;
+    width:60%;
+    margin-left:27%;
+    margin-top:20%;
+    position: absolute;
+}
+
+select{
+    height:60px;
+    width:35%;
+    font-size:15px;
+    text-align:center;
+}
+
+.restlist{
+    width:50%  
+}
+a{
+    text-decoration:none
+}
+
+
+/* QuickSearch Start */
+#QuickSearch{
+    width:80%;
+    margin-left: 10%;
+    margin-top:5%;
+}
+#QuickHeading{
+    color:orange;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    display:block;
+    margin-left: 2%;
+}
+
+#QuickHeading:hover{
+    font-size:35px; 
+}
+
+#QuickSubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+.tileContainer{
+    height:200px;
+    width:30%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 10px 20px 10px gray;
+    animation: dance 10s infinite
+}
+
+.tileContainer:hover{
+    /*transform: scale(1.1);
+    transform: skewX(-20deg);
+    transform: rotate(20deg);*/
+    transform: scale(1.1)
+}
+
+@keyframes dance{
+    0% {transform: rotate(-5deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(5deg)}
+    60% {transform: scale(1.1)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(-5deg)}
+}
+
+
+.tileComponent1{
+    width:58%;
+    float: left;
+    height:200px;
+}
+.tileComponent1 > img{
+    height:200px;
+    width:100%;
+}
+.tileComponent2{
+    width:32%;
+    float: left;
+    height:100px;
+    margin-left: 7%;
+    margin-top: 15%;
+}
+.componentHeading{
+    font-size: 25px;
+    color:orange;
+}
+
+.componentHeading > a{
+    color:orange;
+}
+.componentSubHeading{
+    color:gray;
+}
+/* footer Start */
+footer{
+    display:inline-block;
+    width:100%;
+    margin-top:2%;
+    height:150px;
+    background-color:#e09c83
+}
+
+.foot1{
+    width:35%;
+    height:70px;
+    float: left;
+    border-right:2px solid white
+}
+
+@media screen and (max-width:1600px){
+    body{
+        background-color:lightblue
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color:rgb(202, 241, 215)
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color:rgb(237, 245, 209)
+    }
+    .tileContainer{
+        width:45%
+    }
+    #heading{
+        margin-top:22%;
+        margin-left: 23%;
+    }
+    .dropdown{
+        margin-top:30%;
+        margin-left: 29%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background-color:rgb(242, 209, 245)
+    }
+    #logo{
+        margin-left:37%
+    }
+    #heading{
+        margin-top:25%;
+        margin-left:12%;
+    }
+    .dropdown {
+        margin-top: 35%;
+        margin-left: 24%;
+    }
+}
+@media screen and (max-width:800px){
+    body{
+        background-color:rgb(163, 240, 243)
+    }
+    .tileContainer{
+        width:90%
+    }
+    #heading{
+        font-size:38px;
+        margin-top:30%;
+        margin-left:4%;
+    }
+    .dropdown {
+        margin-top: 40%;
+        margin-left: 10%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color:rgb(246, 202, 196)
+    }
+    #heading {
+        font-size: 34px;
+        margin-top: 45%;
+        margin-left: 0%;
+    }
+    .dropdown{
+        margin-top: 62%;
+        margin-left: 7%;
+    }
+}
+
+/*window.innerWidth
+966
+window.innerWidth
+625
+window.innerWidth
+500*/

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="first.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <br/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>Employee</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="#" method="get">
+                        <div class="form-group has-success">
+                            <label class="control-label" for="fname">FirstName*</label>
+                            <input type="text" class="form-control" id="fname"
+                            name="fname" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">LastName</label>
+                            <input type="text" class="form-control" id="lname"
+                            name="lname"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email"
+                                    name="email"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="pwd">Password</label>
+                                    <input type="password" class="form-control" id="pwd"
+                                    name="pwd" minlength="8"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                   <select class="form-control" id="city">
+                                       <option>Delhi</option>
+                                       <option>Mumbai</option>
+                                       <option>NewYork</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="pwd">Date</label>
+                                    <input type="date" class="form-control" id="pwd"
+                                    name="pwd" minlength="8"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Radio--->
+                        <div class="radio">
+                            <label>
+                                <input type="radio" value="female" name="gender">Female
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" value="male" name="gender">Male
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="JavaScript" name="lang">JavaScript
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="React" name="lang">React
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Node" name="lang">Node
+                            </label>
+                        </div>
+                        <button class="btn btn-success" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>  
+            </div>
+            
+        </div>
+    </body>
+</html>

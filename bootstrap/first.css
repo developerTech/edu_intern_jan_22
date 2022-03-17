@@ -1,0 +1,58 @@
+.myp{
+    color:red
+}
+#first{
+    height:200px;
+    background-color:skyblue;
+}
+#second{
+    height:200px;
+    background-color:rgb(217, 240, 136);
+}
+#third{
+    height:200px;
+    background-color:rgb(238, 179, 155);
+}
+#fourth{
+    height:200px;
+    background-color:rgb(240, 159, 236);
+}
+#fifth{
+    height:200px;
+    background-color:rgb(94, 134, 221);
+}
+#sixth{
+    height:200px;
+    background-color:rgb(209, 198, 102);
+}
+#seventh{
+    height:200px;
+    background-color:rgb(30, 55, 65);
+}
+
+.item > img{
+    height: 400px !important;
+    width:100%
+}
+
+.glyphicon-cloud{
+    font-size:40px;
+    color:skyblue;
+}
+.glyphicon-edit{
+    font-size:40px;
+    color:green;
+}
+.glyphicon-trash{
+    font-size:40px;
+    color:red;
+}
+/*
+.navbar-inverse{
+    background-color:teal;
+    border:none
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #eee9e9;
+}*/
