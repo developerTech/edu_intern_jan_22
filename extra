@@ -133,17 +133,6 @@ lg < 992px
 xl < 1200px
 xxl < 1400px
 
-objectfunction
-objectthis
-clouser
-class
-exportimport
-prototypees5
-prototypees6
-hoisting
-forms validation
-weather with jquery
-
 
 
 https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.989184&lon=77.0342729&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29

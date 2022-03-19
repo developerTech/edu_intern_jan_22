@@ -1,0 +1,49 @@
+#window
+> https://www.mongodb.com/try/download/community
+> install
+> in c drive make one folder by name of data
+> c\data
+> inside date make db
+> c\data\db
+
+> open 2 cmd 
+>> in First cmd
+>> go inside bin folder
+c/program file/mongodb/server/5.0/bin
+>> mongod (this will start new mongodb server on port 27017)
+
+>> open second cmd
+>> go inside bin folder
+c/program file/mongodb/server/5.0/bin
+>> mongo
+
+
+////////Mac/Linux
+> https://www.mongodb.com/try/download/community
+> install
+> open terminal on root
+> type mkdir data/db
+
+
+> open 2 terminal 
+>> in First terminal
+>> mongod --dbpath data/db
+
+>> open second terminal
+>> mongo
+
+////live setup
+> https://www.mongodb.com/atlas
+> sign up with gmail
+
+///////
+>> click > create > shared > aws > city > M0 sandbox
+> create cluster
+
+>> database access > Add new database user
+> user and password (test , test123) > Atlas Admin > Add User
+
+>> Network Access > Add Ip Address >
+> Access List Entry(0.0.0.0/0)
+> Comment : Anything > Confirm
+
