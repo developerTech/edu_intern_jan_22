@@ -136,3 +136,31 @@ xxl < 1400px
 
 
 https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.989184&lon=77.0342729&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+
+
+///
+NodeJs
+/////
+NodeJs is single thread, async, non blocking I/O
+
+Open source
+
+package.json
+> entry point to our application
+> meta data (description, version, name)
+> cmd (start, test)
+> packages info
+
+//////////////////////
+how to generate package.json
+/////////////////
+> go inside the folder using cmd/terminal
+> npm init
+> answer all question
+> type "yes"
+
+//////////////////////
+step to install package
+/////////////////
+> go inside the folder using cmd/terminal
+> npm i packagename
