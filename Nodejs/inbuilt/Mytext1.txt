@@ -1,0 +1,6 @@
+107.66875627931105 This is nodejs code 
+425.81712121783744 This is nodejs code 
+487.52115501551185 This is nodejs code 
+201.3430381263741 This is nodejs code 
+369.2243547394736 This is nodejs code 
+39.09834737270823 This is nodejs code 
