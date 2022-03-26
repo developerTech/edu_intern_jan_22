@@ -4,7 +4,7 @@ let http = require('http');
 // res > what server will give us back
 
 let server = http.createServer((req,res) => {
-    res.write('<h1>First Server with NodeJs</h1>');
+    res.write('<h1>First Server with NodeJs App</h1>');
     res.end();
 })
 

@@ -164,3 +164,29 @@ step to install package
 /////////////////
 > go inside the folder using cmd/terminal
 > npm i packagename
+
+//////////////////////
+step to install global package
+/////////////////
+#window
+> open the cmd as adminstrator
+> npm i -g packageName
+
+#mac/linux
+> open terminal
+> sudo npm i -g packageName
+
+////////CRUD///////
+C > create (insert)
+R > Read   (Get)
+U > Update (Put)
+D > Delete (Delete)
+
+SQL       NoSql
+Database  Database
+Table     Collection
+Row       Document  
+Select    Find
+insert    insert
+Update    Update
+Delete    Remove

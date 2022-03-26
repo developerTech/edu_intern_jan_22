@@ -47,4 +47,25 @@ c/program file/mongodb/server/5.0/bin
 > Access List Entry(0.0.0.0/0)
 > Comment : Anything > Confirm
 
+/////////////////////////////////////////
+
+RollNo | Hindi | English
+  1    | 80    |         |
+  2    |       |     67  |
+  3    | 76    |         |
+
+[
+    {
+        rollNo: 1,
+        Hindi: 80
+    },
+    {
+        rollNo: 2,
+        English: 67
+    },
+    {
+        rollNo: 3,
+        Hindi: 76
+    }
+]
 
