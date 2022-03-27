@@ -1,20 +1,38 @@
 // page 1
-> List of City
-> https://zomatoajulypi.herokuapp.com/location
+# List of City
+>> https://zomatoajulypi.herokuapp.com/location
+>> http://localhost:9700/location
 
-> List of Restaurants
-> List of Restaurants wrt to City
-> List of MealType
+# List of Restaurants
+>> https://zomatoajulypi.herokuapp.com/restaurants
+>> http://localhost:9700/restaurants
+
+# List of Restaurants wrt to City
+>> https://zomatoajulypi.herokuapp.com/restaurant?stateId=1
+>> http://localhost:9700/restaurants?state_id=4
+
+# List of MealType
+>> https://zomatoajulypi.herokuapp.com/quicksearch
+>> http://localhost:9700/mealType
 
 //Page2
-> List of restaurants on basis of meal
-> Filter on basis of cuisine
-> Filter on basis of cost
-> Sort (low to High)
+# List of restaurants on basis of meal
+>> https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id=
+>> http://localhost:9700/restaurants?meal_id=4
+
+# Filter on basis of cuisine
+>> https://zomatoajulypi.herokuapp.com/filter/4?cuisine=1
+# Filter on basis of cost
+>> https://zomatoajulypi.herokuapp.com/filter/1?hcost=1000&lcost=500
+# Sort (low to High)
 
 //page3
-> Details of restaurants
-> Menu on the basis of restaurants
+# Details of restaurants
+>> http://zomatoajulypi.herokuapp.com/details/1
+>> http://localhost:9700/details/618776b162a1816f885956bf
+
+Menu on the basis of restaurants
+>>  http://localhost:9700/menu?restId=8
 
 //page4 
 > Menu details of item selected

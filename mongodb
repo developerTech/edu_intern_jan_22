@@ -69,3 +69,31 @@ RollNo | Hindi | English
     }
 ]
 
+SQL       NoSql
+Database  Database
+Table     Collection
+Row       Document  
+Select    Find
+insert    insert
+Update    Update
+Delete    Remove
+
+///////Step to see all database///////
+show dbs
+
+///////Step to create database///////
+use dbname
+
+> show collections
+
+db.CollectionName.insert()
+
+db.user.insert({name:"John"})
+
+db.user.find()
+
+// find with condition
+db.zomato.find({state_id:4})
+
+db.zomato.find({'mealTypes.mealtype_id':1})
+

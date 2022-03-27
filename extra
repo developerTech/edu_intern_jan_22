@@ -182,11 +182,14 @@ R > Read   (Get)
 U > Update (Put)
 D > Delete (Delete)
 
-SQL       NoSql
-Database  Database
-Table     Collection
-Row       Document  
-Select    Find
-insert    insert
-Update    Update
-Delete    Remove
+
+
+params
+> pass after / in url
+> complusory to define
+> should be use when we have to only pass 1  values
+
+QueryParams
+> pass after ? in url
+> no need to define
+> should be use when we have to only pass more than 1 values

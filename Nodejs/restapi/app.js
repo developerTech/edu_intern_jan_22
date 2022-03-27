@@ -1,50 +1,74 @@
 let express = require('express');
 let app = express();
-let port = 8230;
+const mongo = require('mongodb');
+const MongoClient = mongo.MongoClient;
+const dotenv = require('dotenv');
+dotenv.config()
+let port = process.env.PORT || 8230;
+const mongoUrl = process.env.mongoLiveUrl;
 
-let city = [
-    {
-      "location_id": 1,
-      "location_name": "Ashok Vihar Phase 3, New Delhi",
-      "state_id": 1,
-      "state": "Delhi",
-      "country_name": "India"
-    },
-    {
-      "location_id": 4,
-      "location_name": "Bibvewadi, Pune",
-      "state_id": 2,
-      "state": "Maharashtra",
-      "country_name": "India"
-    },
-    {
-      "location_id": 8,
-      "location_name": "Jeevan Bhima Nagar, Bangalore",
-      "state_id": 3,
-      "state": "Karnataka",
-      "country_name": "India"
-    },
-    {
-      "location_id": 13,
-      "location_name": "Sector 40, Chandigarh",
-      "state_id": 4,
-      "state": "Punjab",
-      "country_name": "India"
-    }
-  ]
 
 app.get('/',(req,res) => {
     res.send("Welcome to Express")
 })
 
-app.get('/list',(req,res) => {
-    res.send("This is list Route")
+//location
+app.get('/location',(req,res) => {
+    db.collection('location').find().toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
 })
 
-app.get('/city',(req,res) => {
-    res.send(city)
+//restaurants
+app.get('/restaurants/',(req,res) => {
+    // let id = req.params.id;
+    // let id  = req.query.id
+    // console.log(">>>id",id)
+    let query = {};
+    let stateId = Number(req.query.state_id)
+    let mealId = Number(req.query.meal_id)
+    if(stateId){
+        query = {state_id:stateId}
+    }else if(mealId){
+        query = {'mealTypes.mealtype_id':mealId}
+    }
+
+    db.collection('restaurants').find(query).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
 })
 
-app.listen(port,()=> {
-    console.log(`Server is running on port ${port}`)
+//restaurantDetails
+app.get('/details/:id',(req,res) => {
+    //let restId = Number(req.params.id);
+    let restId = mongo.ObjectId(req.params.id)
+    db.collection('restaurants').find({_id:restId}).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+
+//menu
+app.get('/menu',(req,res) => {
+    let query = {}
+    let restId = Number(req.query.restId)
+    if(restId){
+        query = {restaurant_id:restId}
+    }
+    db.collection('menu').find(query).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+// Connection with db
+MongoClient.connect(mongoUrl, (err,client) => {
+    if(err) console.log(`Error while connecting`);
+    db = client.db('augintern');
+    app.listen(port,() => {
+        console.log(`Server is running on port ${port}`)
+    })
 })
