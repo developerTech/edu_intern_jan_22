@@ -36,8 +36,34 @@ Menu on the basis of restaurants
 
 //page4 
 > Menu details of item selected
+(POST)> localhost:9700/menuItem
+(body)> [1,4,6]
+
 > Place Order
+(post) > localhost:9700/placeOrder
+(body) > 
+{
+	"name":"Aakash",
+	"email":"aakash@gmail.com",
+	"address":"Hno 23,Sector 1",
+	"phone":97876733,
+	"cost":431,
+	"menuItem":[34,26,17],
+	"status":"Pending"
+}
 
 //page5
 > See all order place
+>>> localhost:9700/viewOrder
 > Get Order on basis of emailId
+>>>>  localhost:9700/viewOrder?email=aakash@gmail.com
+
+//update order
+(put) localhost:9700/updateOrder/62514d42f5aec503b2e0f2a9
+(body) 
+{
+	"status":"In Transit",
+    "bankName":"Axis Bank"
+}
+
+

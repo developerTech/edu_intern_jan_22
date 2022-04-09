@@ -97,3 +97,50 @@ db.zomato.find({state_id:4})
 
 db.zomato.find({'mealTypes.mealtype_id':1})
 
+/////
+
+db.menu.find({menu_id:{$in:[24,32,16]}}).pretty()
+
+/////Delete
+
+//delete all the records
+db.CollectionName.remove({})
+
+//delete particular record
+db.CollectionName.remove({})
+
+db.orders.remove({"_id":"62514d42f5aec503b2e0f2a9"})
+
+db.orders.remove({"phone":97876733})
+
+
+////update 
+db.orders.updateOne(
+    {_id:"62514d77f5aec503b2e0f2ab"},
+    {
+        $set:{
+            "status":"Delivered"
+            "bank":"SBI"
+        }
+    }
+)
+
+
+db.orders.updateOne(
+    {_id:"62514d77f5aec503b2e0f2ab"},
+    {
+        $set:{
+            "bank":"SBI"
+        }
+    }
+)
+
+
+db.orders.updateOne(
+    {_id:"62514d77f5aec503b2e0f2ab"},
+    {
+        $unset:{
+            "address":"",
+        }
+    }
+)
