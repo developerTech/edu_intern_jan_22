@@ -8,6 +8,7 @@ let port = process.env.PORT || 8230;
 const mongoUrl = "mongodb+srv://local:test12345@cluster0.f8vmc.mongodb.net/augintern?retryWrites=true&w=majority";
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const token = "8fbf8tyyt87378";
 
 // middleware
 app.use(bodyParser.urlencoded({extended:true}));
@@ -21,10 +22,14 @@ app.get('/',(req,res) => {
 
 //location
 app.get('/location',(req,res) => {
-    db.collection('location').find().toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
+    if(req.query.token === token){
+        db.collection('location').find().toArray((err,result) => {
+            if(err) throw err;
+            res.send(result)
+        })
+    }else{
+        res.send('Unauthorise')
+    }
 })
 
 //restaurants
