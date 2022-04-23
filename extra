@@ -215,3 +215,49 @@ QueryParams
 (Header) => {'x-access-token':'token value from login'}
 
 
+////////React > Frontend 
+> React is lib/framework which help to build single page application(SPA)
+using component based structure
+
+////step to generate react app
+#window
+**** One Time Step ****
+> open cmd as admin
+> npm i -g create-react-app
+
+**** Next All Time You Need New App ****
+> open cmd
+> navigate to folder where you want app
+> create-react-app appname
+
+#mac/linux
+**** One Time Step ****
+> open terminal
+> sudo npm i -g create-react-app
+
+**** Next All Time You Need New App ****
+> open terminal
+> navigate to folder where you want app
+> create-react-app appname
+
+//////////
+**** All Time You Need New App ****
+> open cmd/terminal
+> navigate to folder where you want app
+> npx create-react-app appname
+
+component
+# functional
+> Dumb component
+> Mainly use for the purpose of display
+> Cannot maintain the state
+
+# class
+> Logical component
+> Use for logics as well as display
+> Can maintain the state
+
+
+> hooks
+
+////https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d

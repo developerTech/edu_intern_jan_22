@@ -1,0 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const Home = () => {
+    return(
+        <div>
+            <h1>Hii From React</h1>
+            <h2>React Code</h2>
+        </div>
+    )
+}
+
+//ReactDOM.render(<Home/>,document.getElementById('root'))
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Home/>)

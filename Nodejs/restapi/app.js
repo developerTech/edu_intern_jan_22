@@ -52,6 +52,40 @@ app.get('/restaurants/',(req,res) => {
     })
 })
 
+app.get('/filters/:mealId',(req,res) => {
+    let sort = {cost:1}
+    let mealId = Number(req.params.mealId)
+    let cuisineId = Number(req.query.cuisineId)
+    let lcost = Number(req.query.lcost)
+    let hcost = Number(req.query.hcost)
+
+    let query = {}
+    if(req.query.sort){
+        sort={cost:Number(req.query.sort)}
+    }
+    if(cuisineId){
+        query = {
+            "mealTypes.mealtype_id":mealId,
+            "cuisines.cuisine_id":cuisineId
+        }
+    }else if(lcost && hcost){
+        query = {
+            "mealTypes.mealtype_id":mealId,
+            $and:[{cost:{$gt:lcost,$lt:hcost}}]
+        }
+    }
+    else{
+        query = {
+            "mealTypes.mealtype_id":mealId
+        }
+    }
+
+    db.collection('restaurants').find(query).sort(sort).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
 //restaurantDetails
 app.get('/details/:id',(req,res) => {
     //let restId = Number(req.params.id);

@@ -53,3 +53,19 @@ add(1,2)
 let add = (a,b) => { return a+b }
 add(2,3)
 5
+
+
+function add(a,b){
+    return a,b
+}
+
+add(1,2)
+2
+
+function add(a,b){
+    var out = [a,b]
+    return out
+}
+
+add(2,1)
+[2,1]
