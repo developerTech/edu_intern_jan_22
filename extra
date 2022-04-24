@@ -261,3 +261,17 @@ component
 > hooks
 
 ////https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
+
+state
+> State act a local variable inside the component
+> Each component can have its own state
+> We can update the value of state
+> Any data interaction will happen through state only
+
+props
+> Help to transfer the data between 2 nested component
+> We cannot update the value of props
+
+
+parent => child (props)
+child => parent (props with function)
