@@ -23,7 +23,6 @@ class Home extends Component {
         this.setState({filteredData:output})
     }
 
-
     render(){
         //console.log(this.state.productData)
         return(
