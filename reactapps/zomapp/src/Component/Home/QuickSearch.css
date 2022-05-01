@@ -1,0 +1,80 @@
+#QuickSearch{
+    width:80%;
+    margin-left: 10%;
+    margin-top:5%;
+    display:inline-block
+}
+#QuickHeading{
+    color:orange;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    display:block;
+    margin-left: 2%;
+}
+
+#QuickHeading:hover{
+    font-size:35px; 
+}
+
+#QuickSubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+.tileContainer{
+    height:200px;
+    width:30%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 10px 20px 10px gray;
+    animation: dance 10s infinite
+}
+
+.tileContainer:hover{
+    /*transform: scale(1.1);
+    transform: skewX(-20deg);
+    transform: rotate(20deg);*/
+    transform: scale(1.1)
+}
+
+@keyframes dance{
+    0% {transform: rotate(-5deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(5deg)}
+    60% {transform: scale(1.1)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(-5deg)}
+}
+
+
+.tileComponent1{
+    width:58%;
+    float: left;
+    height:200px;
+}
+.tileComponent1 > img{
+    height:200px;
+    width:100%;
+}
+.tileComponent2{
+    width:32%;
+    float: left;
+    height:100px;
+    margin-left: 7%;
+    margin-top: 15%;
+}
+.componentHeading{
+    font-size: 25px;
+    color:orange;
+}
+
+.componentHeading > a{
+    color:orange;
+}
+.componentSubHeading{
+    color:gray;
+}

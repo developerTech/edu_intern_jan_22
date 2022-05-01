@@ -1,0 +1,73 @@
+/* Search Start */
+#search{
+    height:400px;
+    background-image: url('https://i.ibb.co/NVQxPB6/food-Wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 400px;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: rgba(255, 255, 255,1);
+    border-radius: 50%;
+    margin-left:45%;
+    margin-top:1%;
+    position: absolute;
+    font-size:80px;
+    color:#e09c83;
+    animation:revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0% {transform: rotate(30deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/*
+#logo:hover{
+    background-color: rgba(255, 255, 255,.5);
+    color:#d85323;
+    transform: rotate(270deg);
+}
+*/
+
+#logo > span{
+    margin-left: 30%;
+    margin-top:15%;
+    position: absolute;
+}
+
+#heading{
+    margin-left:29%;
+    margin-top:14%;
+    position: absolute;
+    color:white;
+    font-size:45px;
+}
+
+.dropdown{
+    height:60px;
+    width:60%;
+    margin-left:27%;
+    margin-top:20%;
+    position: absolute;
+}
+
+select{
+    height:60px;
+    width:35%;
+    font-size:15px;
+    text-align:center;
+}
+
+.restlist{
+    width:50%  
+}
+a{
+    text-decoration:none
+}
