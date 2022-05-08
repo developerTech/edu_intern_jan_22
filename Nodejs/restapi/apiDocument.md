@@ -38,6 +38,7 @@ http://localhost:9700/filters/1?cuisineId=4&sort=-1
 >> http://localhost:9700/details/618776b162a1816f885956bf
 
 Menu on the basis of restaurants
+>> http://zomatoajulypi.herokuapp.com/menu?restId=8
 >>  http://localhost:9700/menu?restId=8
 
 //page4 
