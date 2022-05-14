@@ -4,8 +4,8 @@ import './details.css';
 import {Link} from 'react-router-dom';
 import MenuDisplay from './menuDisplay'
 
-const url = "http://zomatoajulypi.herokuapp.com/details"
-const menuUrl = "http://zomatoajulypi.herokuapp.com/menu"
+const url = "https://zomatoajulypi.herokuapp.com/details"
+const menuUrl = "https://zomatoajulypi.herokuapp.com/menu"
 
 class RestDetails extends Component {
 
@@ -22,6 +22,11 @@ class RestDetails extends Component {
 
     addToCart = (data) => {
         this.setState({userItem:data})
+    }
+
+    proceed = () => {
+        sessionStorage.setItem('menu',this.state.userItem);
+        this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
     }
 
     render(){
@@ -59,7 +64,7 @@ class RestDetails extends Component {
                         <div>
                             <Link to= {`/listing/${this.state.mealId}`} className="btn btn-back">Back</Link>
                             {/* <button className="btn btn-checkout">Add To Cart</button> */}
-                            <button className="btn btn-proceed">Checkout</button>
+                            <button className="btn btn-proceed" onClick={this.proceed}>Checkout</button>
                         </div>
                     </div>
                 </div>
@@ -77,7 +82,7 @@ class RestDetails extends Component {
         let restId = this.props.location.search.split('=')[1];
         let response = await axios.get(`${url}/${restId}`)
         console.log(">>>response.data[0].restaurant_id",response.data[0].restaurant_id)
-        let menuResponse = await axios.get(`${menuUrl}?restId=${response.data[0].restaurant_id}`)
+        let menuResponse = await axios.get(`${menuUrl}/${response.data[0].restaurant_id}`)
         this.setState({details:response.data[0],menuList:menuResponse.data})
     }
 }
