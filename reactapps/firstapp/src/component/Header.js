@@ -16,7 +16,6 @@ class Header extends Component{
         this.setState({keyword:event.target.value?event.target.value:'User Text Here'})
         // from here we are passing data
         this.props.userText(event.target.value)
-
     }
 
     render(){

@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './Search.css';
+import {withRouter} from 'react-router-dom'
 
 const url = "https://zomatoajulypi.herokuapp.com/location"
 const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
@@ -36,8 +37,14 @@ class Search extends Component{
     }
 
     handleRestaurants = (event) => {
-        let stateId = event.target.value;
-        fetch(`${restUrl}${stateId}`,{method:'GET'})
+        let restId = event.target.value;
+        console.log(">>>>inside",restId)
+        this.props.history.push(`/details?restId=${restId}`)
+    }
+
+    handleCity = (event) => {
+        let restId = event.target.value;
+        fetch(`${restUrl}${restId}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
             // console.log(">>>>",data)
@@ -46,7 +53,7 @@ class Search extends Component{
     }
 
     render(){
-        console.log(">>>>inside render")
+        console.log(">>>>inside props>>",this.props)
         return(
             <div>
                 <div id="search">
@@ -57,11 +64,11 @@ class Search extends Component{
                         Find The Best Restaurants Near You
                     </div>
                     <div className="dropdown">
-                        <select onChange={this.handleRestaurants}>
+                        <select onChange={this.handleCity}>
                             <option>-----PLEASE SELECT CITY-----</option>
                             {this.renderCity(this.state.location)}
                         </select>
-                        <select className="restlist">
+                        <select className="restlist" onChange={this.handleRestaurants}>
                             <option>-----PLEASE SELECT RESTAURANTS-----</option>
                             {this.renderRest(this.state.restaurants)}
                         </select>
@@ -82,4 +89,4 @@ class Search extends Component{
     }
 }
 
-export default Search
+export default withRouter(Search)
