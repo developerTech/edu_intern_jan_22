@@ -3,6 +3,8 @@ import axios from 'axios';
 import './listing.css';
 import ListingDisplay from './listingDisplay';
 import CuisineFilter from '../filters/cuisineFilter'
+import CostFilter from '../filters/costFilter';
+import Header from '../../header'
 
 const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id="
 
@@ -22,6 +24,7 @@ class Listing extends Component {
     render(){
         return(
             <>
+                <Header/>
                 <div className="row">
                     <div id="mainListing">
                         <div id="filter">
@@ -30,6 +33,7 @@ class Listing extends Component {
                             </center>
                             <hr/>
                             <CuisineFilter restPerCuisine={(data) => {this.setDatPerFilter(data)}}/>
+                            <CostFilter restPerCost={(data) => {this.setDatPerFilter(data)}}/>
                         </div>
                     </div>
                     <ListingDisplay listData={this.state.restaurants}/>

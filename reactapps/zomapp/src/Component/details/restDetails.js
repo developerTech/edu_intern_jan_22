@@ -3,6 +3,7 @@ import axios from 'axios';
 import './details.css';
 import {Link} from 'react-router-dom';
 import MenuDisplay from './menuDisplay'
+import Header from '../../header'
 
 const url = "https://zomatoajulypi.herokuapp.com/details"
 const menuUrl = "https://zomatoajulypi.herokuapp.com/menu"
@@ -35,6 +36,7 @@ class RestDetails extends Component {
         console.log(this.state.userItem)
         return(
             <>
+                <Header/>
                 <div id="mainContent">
                     <div className="imgDiv">
                     <img src={this.state.details.restaurant_thumb} alt="snacks"/>

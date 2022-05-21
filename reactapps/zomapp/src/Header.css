@@ -8,7 +8,9 @@ header{
 }
 
 #social{
-    float:right
+    float: right;
+    margin-right: 5%;
+    margin-top: 1%;
 }
 
 .slogo{
@@ -17,4 +19,7 @@ header{
 }
 .btnclass{
     margin-top: 1%;
+}
+.btnlogin{
+    display:inline-block
 }
