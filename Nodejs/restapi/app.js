@@ -156,12 +156,15 @@ app.delete('/deleteOrders',(req,res)=>{
 
 //update orders
 app.put('/updateOrder/:id',(req,res) => {
-    let oId = mongo.ObjectId(req.params.id);
+    console.log(">>>id",req.params.id)
+    console.log(">>>id",req.body)
+    let oId = Number(req.params.id)
     db.collection('orders').updateOne(
-        {_id:oId},
+        {id:oId},
         {$set:{
             "status":req.body.status,
-            "bank_name":req.body.bankName
+            "bank_name":req.body.bank_name,
+            "date":req.body.date
         }},(err,result) => {
             if(err) throw err
             res.send(`Status Updated to ${req.body.status}`)

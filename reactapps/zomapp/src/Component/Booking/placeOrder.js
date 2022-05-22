@@ -51,7 +51,8 @@ class PlaceOrder extends Component {
             },
             body:JSON.stringify(obj)
         })
-        .then(this.props.history.push('/viewBooking'))
+        //.then(this.props.history.push('/viewBooking'))
+        .then(console.log('order Added'))
     }
 
     render(){
@@ -75,6 +76,10 @@ class PlaceOrder extends Component {
                         <h3>Your Order For {this.props.match.params.restName}</h3>
                     </div>
                     <div className="panel-body">
+                        <form action="https://developerpayment.herokuapp.com/paynow" method="POST">
+                        <input type="hidden" name="cost" value={this.state.cost}/>
+                        <input type="hidden" name="id" value={this.state.id}/>
+                        <input type="hidden" name="hotel_name" value={this.state.hotel_name}/>
                         <div className="row">
                             <div className="form-group col-md-6">
                                 <label for="fname">Name</label>
@@ -104,6 +109,7 @@ class PlaceOrder extends Component {
                             </div>
                         </div>
                         <button className="btn btn-success" onClick={this.checkout}>Procced</button>
+                        </form>
                     </div>
                 </div>
             </div>

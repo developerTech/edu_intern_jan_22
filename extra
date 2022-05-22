@@ -323,3 +323,7 @@ npm i -g heroku
 /******UserInfo*****/
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+https://dashboard.paytm.com/
+
+https://developerpayment.herokuapp.com/paynow
