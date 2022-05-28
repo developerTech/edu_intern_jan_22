@@ -327,3 +327,17 @@ npm i -g heroku
 https://dashboard.paytm.com/
 
 https://developerpayment.herokuapp.com/paynow
+
+
+////////for react Deploymenent
+> Node Api For Data Live
+> Login api Live
+> Payment Gateway Live
+
+> Run>  npm run build
+
+https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
+
+
+https://docs.mapbox.com/mapbox-gl-js/example/
+"mapbox-gl": "^2.7.1",

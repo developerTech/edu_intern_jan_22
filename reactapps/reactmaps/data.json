@@ -1,0 +1,49 @@
+[
+    {
+      "_id": "62040d37f5d9c4a5a545236a",
+      "id": 16,
+      "name": "R-Cube Mall",
+      "country": "India",
+      "code": "IND",
+      "address": "Rajouri Garden New Delhi Delhi NCR 110027",
+      "lat": 28.647953,
+      "lon": 77.120305,
+      "city_id": 1,
+      "city_name": "Delhi"
+    },
+    {
+      "_id": "62040d37f5d9c4a5a545238b",
+      "id": 28,
+      "location": "Maker Maxity",
+      "country": "India",
+      "code": "IND",
+      "address": "BKC Road, Bandra Kurla Complex, Mumbai 400051",
+      "lat": 19.063505,
+      "lon": 72.861859,
+      "city_id": 2,
+      "city_name": "Mumbai"
+    },
+    {
+      "_id": "62040d37f5d9c4a5a5452383",
+      "id": 131,
+      "name": "DLF Cyber Hub",
+      "country": "India",
+      "code": "IND",
+      "address": "Ground Floor DLF Cyber Hub, Phase II Gurgaon 122002",
+      "lat": 28.527705,
+      "lon": 77.219162,
+      "city_id": 1,
+      "city_name": "Delhi"
+    },
+    {
+      "_id": "62040d37f5d9c4a5a5452390",
+      "id": 213,
+      "location": "Turner Road, Bandra West",
+      "country": "India",
+      "code": "IND",
+      "address": "Bandra West, Mumbai,  Mumbai 400050",
+      "lat": 19.060006,
+      "lon": 72.832209,
+      "city_id": 2,
+      "city_name": "Mumbai"
+    },
