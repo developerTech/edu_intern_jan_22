@@ -1,0 +1,25 @@
+header{
+    height:60px;
+    background-color:#e09c83
+}
+
+#icon{
+    float:left
+}
+
+#social{
+    float: right;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.slogo{
+    height: 50px;
+    width: 50px;
+}
+.btnclass{
+    margin-top: 1%;
+}
+.btnlogin{
+    display:inline-block
+}

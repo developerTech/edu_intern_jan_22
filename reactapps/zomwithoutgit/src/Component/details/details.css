@@ -1,0 +1,65 @@
+#mainContent{
+    height:500px;
+    width:90%;
+    margin-left:5%;
+    margin-top:2%;
+}
+.imgDiv{
+    height:400px;
+    width:40%;
+    float: left;
+    border:5px groove gray
+}
+.imgDiv > img {
+    height:400px;
+    width:100%; 
+}
+.contentDiv{
+    height:500px;
+    width:55%;
+    margin-left:2%;
+    float: left;
+    margin-top: -2%;
+}
+.feature_container{
+    width:100%;
+    display: inline-block;
+}
+.feature{
+    float: left;
+    margin-left:5%;
+}
+.imgIcon{
+    height:100px;
+    width:100px;
+    margin-left:2%
+}
+h2{
+    font-size: 35px;
+    color:green;
+}
+.fa-amazon{
+    font-size:25px;
+    color:orange
+}
+.checked{
+    color:red
+}
+.btn{
+    color:white;
+    margin-left:1%
+}
+
+.btn-proceed{
+    height:50px;
+    width:200px;
+    font-size:20px;
+    background-color:rgb(144, 145, 235)
+}
+
+.btn-back{
+    height:50px;
+    width:200px;
+    font-size:20px;
+    background-color:rgb(237, 120, 120)
+}
